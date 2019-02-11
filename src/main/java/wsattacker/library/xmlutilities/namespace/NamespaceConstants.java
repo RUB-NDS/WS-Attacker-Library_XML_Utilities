@@ -39,7 +39,7 @@ public final class NamespaceConstants
 
     final public static String URI_NS_SCHEMA = "http://www.w3.org/2001/XMLSchema";
 
-    final public static String URI_NS_WSATTACKER = "http://sourceforge.net/projects/ws-attacker/";
+    final public static String URI_NS_WSATTACKER = "https://github.com/RUB-NDS/WS-Attacker";
 
     final public static String URI_NS_SAML10 = "urn:oasis:names:tc:SAML:1.0:assertion";
 
