@@ -2,10 +2,11 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>XML_Utilities_Library</artifactId>
+    <groupId>wsattacker.library</groupId>
+    <artifactId>XML_Utilities</artifactId>
     <name>WS-Attacker-Library_XML_Utilities</name>
     <inceptionYear>2013</inceptionYear>
+    <version>1.10</version>
 
     <developers>
         <developer>
@@ -22,13 +23,19 @@
         </developer>
     </developers>
 
-    <parent>
-        <groupId>wsattacker.library</groupId>
-        <artifactId>wsattacker-libraries</artifactId>
-        <version>1.9-SNAPSHOT</version>
-    </parent>
-
     <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -39,6 +46,7 @@
             <plugin>
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
+                <version>3.0</version>
                 <configuration>
                     <properties>
                         <owner>Christian Mainka</owner>
